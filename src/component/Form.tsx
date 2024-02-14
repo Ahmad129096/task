@@ -48,7 +48,7 @@ export default function Form() {
             </div>
             <form action="#" method="post" onSubmit={handleSubmit}>
               <div className="form">
-                <div className="form-group">
+                <div className={errors.firstName ? "error" : "form-group"}>
                   <label>
                     First Name <span className="asteric">*</span>
                   </label>
@@ -60,7 +60,7 @@ export default function Form() {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="form-group">
+                <div className={errors.lastName ? "error" : "form-group"}>
                   <label>
                     Last Name <span className="asteric">*</span>
                   </label>

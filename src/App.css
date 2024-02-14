@@ -58,6 +58,13 @@ justify-content: space-between;
   border-radius: 5px;
 }
 
+.error input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
 .form-submit {
   position: absolute;
   bottom: 20px;
